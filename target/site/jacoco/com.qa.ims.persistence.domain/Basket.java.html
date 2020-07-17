@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Basket.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ImranSubhan-20JuneSoftware1</a> &gt; <a href="index.source.html" class="el_package">com.qa.ims.persistence.domain</a> &gt; <span class="el_source">Basket.java</span></div><h1>Basket.java</h1><pre class="source lang-java linenums">package com.qa.ims.persistence.domain;
+
+public class Basket {
+	
+	private Long orderitemsid;
+	private Long orderid;
+	private Long customerid;
+	private Long productid;
+	private Long quantity;
+	private Double price;
+
+
+<span class="fc" id="L13">	public Basket(Long orderitemsid, Long orderid, Long customerid, Long productid, Long quantity, Double price) {</span>
+<span class="fc" id="L14">		this.orderitemsid = orderitemsid;</span>
+<span class="fc" id="L15">		this.orderid = orderid;</span>
+<span class="fc" id="L16">		this.customerid = customerid;</span>
+<span class="fc" id="L17">		this.productid = productid;</span>
+<span class="fc" id="L18">		this.quantity = quantity;</span>
+<span class="fc" id="L19">		this.price = price;</span>
+<span class="fc" id="L20">	}</span>
+
+<span class="nc" id="L22">	public Basket(Long orderid, Double price) {</span>
+<span class="nc" id="L23">		this.orderid = orderid;</span>
+<span class="nc" id="L24">		this.price = price;</span>
+<span class="nc" id="L25">	}</span>
+	
+
+
+<span class="fc" id="L29">	public Basket(Long orderid, Long customerid, Long productid, Long quantity, Double price) {</span>
+<span class="fc" id="L30">		this.orderid = orderid;</span>
+<span class="fc" id="L31">		this.customerid = customerid;</span>
+<span class="fc" id="L32">		this.productid = productid;</span>
+<span class="fc" id="L33">		this.quantity = quantity;</span>
+<span class="fc" id="L34">		this.price = price;</span>
+<span class="fc" id="L35">	}</span>
+
+
+
+
+	public Long getOrderitemsid() {
+<span class="fc" id="L41">		return orderitemsid;</span>
+	}
+
+
+	public void setOrderitemsid(Long orderitemsid) {
+<span class="fc" id="L46">		this.orderitemsid = orderitemsid;</span>
+<span class="fc" id="L47">	}</span>
+
+
+	public Long getOrderid() {
+<span class="fc" id="L51">		return orderid;</span>
+	}
+
+
+	public void setOrderid(Long orderid) {
+<span class="fc" id="L56">		this.orderid = orderid;</span>
+<span class="fc" id="L57">	}</span>
+
+
+	public Long getCustomerid() {
+<span class="fc" id="L61">		return customerid;</span>
+	}
+
+
+	public void setCustomerid(Long customerid) {
+<span class="fc" id="L66">		this.customerid = customerid;</span>
+<span class="fc" id="L67">	}</span>
+
+
+	public Long getProductid() {
+<span class="fc" id="L71">		return productid;</span>
+	}
+
+
+	public void setProductid(Long productid) {
+<span class="fc" id="L76">		this.productid = productid;</span>
+<span class="fc" id="L77">	}</span>
+
+
+	public Long getQuantity() {
+<span class="fc" id="L81">		return quantity;</span>
+	}
+
+
+	public void setQuantity(Long quantity) {
+<span class="fc" id="L86">		this.quantity = quantity;</span>
+<span class="fc" id="L87">	}</span>
+
+
+	public Double getPrice() {
+<span class="fc" id="L91">		return price;</span>
+	}
+
+
+	public void setPrice(Double price) {
+<span class="fc" id="L96">		this.price = price;</span>
+<span class="fc" id="L97">	}</span>
+
+
+	public String toString() {
+<span class="nc" id="L101">		return &quot;orderitemsid: &quot; + orderitemsid + &quot; orderid: &quot; + orderid + &quot; customerid: &quot; + customerid + &quot; productid: &quot; + productid + &quot; quantity: &quot; + quantity + &quot; price: &quot; + price;</span>
+	}
+
+
+
+
+
+//	@Override
+//	public int hashCode() {
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + ((customerid == null) ? 0 : customerid.hashCode());
+//		result = prime * result + ((orderid == null) ? 0 : orderid.hashCode());
+//		result = prime * result + ((orderitemsid == null) ? 0 : orderitemsid.hashCode());
+//		result = prime * result + ((price == null) ? 0 : price.hashCode());
+//		result = prime * result + ((productid == null) ? 0 : productid.hashCode());
+//		result = prime * result + ((quantity == null) ? 0 : quantity.hashCode());
+//		return result;
+//	}
+
+
+
+
+
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		Basket other = (Basket) obj;
+//		if (customerid == null) {
+//			if (other.customerid != null)
+//				return false;
+//		} else if (!customerid.equals(other.customerid))
+//			return false;
+//		if (orderid == null) {
+//			if (other.orderid != null)
+//				return false;
+//		} else if (!orderid.equals(other.orderid))
+//			return false;
+//		if (orderitemsid == null) {
+//			if (other.orderitemsid != null)
+//				return false;
+//		} else if (!orderitemsid.equals(other.orderitemsid))
+//			return false;
+//		if (price == null) {
+//			if (other.price != null)
+//				return false;
+//		} else if (!price.equals(other.price))
+//			return false;
+//		if (productid == null) {
+//			if (other.productid != null)
+//				return false;
+//		} else if (!productid.equals(other.productid))
+//			return false;
+//		if (quantity == null) {
+//			if (other.quantity != null)
+//				return false;
+//		} else if (!quantity.equals(other.quantity))
+//			return false;
+//		return true;
+//	}
+	
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -1,0 +1,15 @@
+2020-07-17 14:28:19 INFO  CustomerController:37 - id: null first_name: Chris surname: P
+2020-07-17 14:28:19 INFO  CustomerController:37 - id: null first_name: Rhys surname: T
+2020-07-17 14:28:19 INFO  CustomerController:37 - id: null first_name: Nic surname: J
+2020-07-17 14:28:19 INFO  CustomerController:63 - Please enter the id of the customer you would like to update
+2020-07-17 14:28:19 INFO  CustomerController:65 - Please enter a first name
+2020-07-17 14:28:19 INFO  CustomerController:67 - Please enter a surname
+2020-07-17 14:28:19 INFO  CustomerController:70 - Customer Updated
+2020-07-17 14:28:19 INFO  CustomerController:48 - Please enter a first name
+2020-07-17 14:28:19 INFO  CustomerController:50 - Please enter a surname
+2020-07-17 14:28:19 INFO  CustomerController:53 - Customer created
+2020-07-17 14:28:19 INFO  CustomerController:80 - Please enter the id of the customer you would like to delete
+2020-07-17 14:28:19 INFO  CustomerController:83 - Customer Deleted
+2020-07-17 14:28:19 INFO  ItemController:41 - productid: null product name: Hat price: 1.0
+2020-07-17 14:28:19 INFO  ItemController:41 - productid: null product name: Top price: 2.0
+2020-07-17 14:28:19 INFO  ItemController:41 - productid: null product name: Shoe price: 3.0
